@@ -77,6 +77,20 @@ img {
     margin-bottom: 12px;
     max-width: 33%;
     text-align: center;
+    color: #2d3c49;
+}
+
+.work-link > h3{
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.work-link > p{
+    margin-top: 5px;
+
 }
 
 /* first break point. Align work links in rows of 2 */
