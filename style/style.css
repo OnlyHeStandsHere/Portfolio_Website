@@ -1,0 +1,105 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.header-logo{
+    max-width: 25%;
+}
+.header-text{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 300;
+    min-width: 75%;
+    color: #2d3c49;
+}
+
+.header-text > h1{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: inherit;
+    font-size: 42px;
+}
+
+.header-text > h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: inherit;
+}
+
+.header-hr{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    height: 4px;
+    background-color: #7d97ad;
+}
+
+.featured-work{
+    min-width: 100%;
+    color: #7d97ad;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.featured-work > h2{
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+.work-link{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-width: 33%;
+    text-align: center;
+}
+
+/* first break point. Align work links in rows of 2 */
+@media screen and (max-width: 1175px){
+        .work-link{
+            min-width: 50%;
+        }
+
+        .featured-work{
+            text-align: center;
+        }
+}
+
+/* second break point. Shrink Header text, center featured work, stack work links */
+@media screen and (max-width: 790px){
+        .work-link{
+            min-width: 100%;
+        }
+        .header-text > h1{
+            font-size: 30px;
+        }
+
+        .header-text > h4{
+            font-size: 15px;
+        }
+}
